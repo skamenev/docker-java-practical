@@ -1,8 +1,6 @@
 version: '3.3'
 services:
   webapp:
-#    build:
-#      context: "."
     image: jdelivuk/docker-java-practical:latest
     deploy:
       resources:
@@ -28,8 +26,6 @@ services:
         reservations:
           cpus: '0.25'
           memory: 64M
-    ports:
-      - "3306:3306"
     volumes:
        - db_data:/var/lib/mysql
     environment:
