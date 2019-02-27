@@ -18,7 +18,7 @@ services:
     - celsius
     - fahrenheit
   database:
-    container_name:dev-database
+    container_name: dev-database
     image: mysql:5.6 
     deploy:
       resources:
